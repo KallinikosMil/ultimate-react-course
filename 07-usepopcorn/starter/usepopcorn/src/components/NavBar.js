@@ -1,13 +1,10 @@
 import React from 'react';
-import Search from './Search';
 import Logo from './Logo';
-import NumResults from './NumResults';
-const NavBar = () => {
+const NavBar = ({ children }) => {
   return (
     <nav className="nav-bar">
       <Logo />
-      <Search />
-      <NumResults />
+      {children}
     </nav>
   );
 };
